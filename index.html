@@ -4,15 +4,18 @@
 <head>
     <title>Ana Paula Brum | Criando experiências na web</title>
     <meta charset="UTF=8">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <img src="https://ui-avatars.com/api/?background=1D4ED8&color=0F172A&name=Ana+Brum" alt="Portfolio">
-        <span>Portfolio</span>
+    <header class="container_header">
+        <section class="block_details">
+            <img src="https://ui-avatars.com/api/?background=1D4ED8&color=0F172A&name=Ana+Brum" alt="Portfolio">
+            <span>Portfolio</span>
+        </section>
 
-        <nav>
-            <ul>
+        <nav class="container-links">
+            <ul class="links">
                 <li><a href="#sobre-mim">Sobre Mim</a></li>
                 <li><a href="#objetivo">Objetivo Profissional</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
@@ -24,121 +27,171 @@
         </nav>
     </header>
 
-    <header>
+    <header class="hero">
         <h1>Ana Paula Cunha Brum</h1>
+        <p>Estudante de tecnologia.</p>
+
+        <div class="botoes">
+            <button>Conheça mais</button>
+            <button>Contato</button>
+        </div>
     </header>
 
-    <p>Estudante de tecnologia.</p>
+    <section class="container" id="sobre-mim">
+        <h2 class="title">Sobre mim</h2>
+        <div class="content_details">
+            <p class="description">Sou estudante do 1º semestre de tecnologia, em busca de aprendizado efetivo para
+                atuação na área.</p>
+            <img class="my_img"
+                src="https://media.licdn.com/dms/image/v2/C5103AQGG_7QxhAgUJw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516956199418?e=1776297600&v=beta&t=WP8iATeAuHneUNseL37Dx9SNEk6wkg4gSKlf6MW8H0s"
+                alt="Minha Imagem">
+        </div>
 
-    <section id="sobre-mim">
-        <h2>Sobre mim</h2>
-        <p>Sou estudante do 1º semestre de tecnologia, em busca de aprendizado efetivo para atuação na área.</p>
-        <img src="https://media.licdn.com/dms/image/v2/C5103AQGG_7QxhAgUJw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516956199418?e=1776297600&v=beta&t=WP8iATeAuHneUNseL37Dx9SNEk6wkg4gSKlf6MW8H0s"
-            alt="Minha Imagem">
-        <span>Minha Imagem</span>
     </section>
 
-    <section id="objetivo">
-        <h2>Objetivo Profissional</h2>
-        <p>Busco oportunidade de estágio na área de desenvolvimento de software, para migração de carreira.</p>
+    <section class="container professional_objective" id="objetivo">
+        <h2 class="title">Objetivo Profissional</h2>
+        <p class="description">Busco oportunidade de estágio na área de desenvolvimento de software, para migração de
+            carreira.</p>
     </section>
 
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <h3>Hard Skills</h3>        
-        <ul>
-            <li>Lógica de programação em Python</li>
-            <li>Progamação Orientada a Objetos</li>
-            <li>Programação em Java</li>
-            <li>Data Base</li>
-            <li>Chatbot e AI</li>
-        </ul>
+    <section class="container" id="habilidades">
+        <h2 class="title">Habilidades</h2>
 
-        <h3>Soft Skills</h3>
-        <ul>
-            <li>Trabalho em equipe</li>
-            <li>Organização</li>
-            <li>Pró atividade</li>
-            <li>Resolução de problemas</li>
-        </ul>
+        <div class="container_cards">
+            <article class="card hard_skill">
+                <h3 class="card_title">Hard Skills</h3>
+                <ul class="skill_list">
+                    <li>Lógica de programação em Python</li>
+                    <li>Progamação Orientada a Objetos</li>
+                    <li>Programação em Java</li>
+                    <li>Data Base</li>
+                    <li>Chatbot e AI</li>
+                </ul>
+            </article>
 
-        <h3>Tecnologias</h3>
-        <p>Habilidades em desenvolvimento.</p>
+            <article class="card soft_skill">
+                <h3 class="card_title">Soft Skills</h3>
+                <ul class="skill_list">
+                    <li>Trabalho em equipe</li>
+                    <li>Organização</li>
+                    <li>Pró atividade</li>
+                    <li>Resolução de problemas</li>
+                </ul>
+            </article>
+
+            <article class="card tecnology">
+                <h3 class="card_title">Tecnologias</h3>
+                <p class="description">Habilidades em desenvolvimento.</p>
+            </article>
+        </div>
+
     </section>
 
-    <section id="formacao">
-        <h2>Formação</h2>
-        <table border="1">
-            <tr>
-                <th>Período</th>
-                <th>Curso</th>
-                <th>Instituição</th>
-                <th>Descrição</th>
-            </tr>
+    <section class="container" id="formacao">
+        <h2 class="title">Formação</h2>
+        <table class="custom_table">
+            <thead>
+                <tr>
+                    <th>Período</th>
+                    <th>Curso</th>
+                    <th>Instituição</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2019</td>
+                    <td>Administração de Empresa</td>
+                    <td>UNIP</td>
+                    <td>Curso com foco em planejamento e organização de recursos financeiros e humanos. </td>
+                </tr>
 
-            <tr>
-                <td>2019</td>
-                <td>Administração de Empresa</td>
-                <td>UNIP</td>
-                <td>Curso com foco em planejamento e organização de recursos financeiros e humanos. </td>
-            </tr>
-
-            <tr>
-                <td>2026</td>
-                <td>Tencologia de Desenvolvimento de Sistema</td>
-                <td>FIAP</td>
-                <td>Cursando disciplinas como programação, lógica e desenvolvimento web.</td>
+                <tr>
+                    <td>2026</td>
+                    <td>Tencologia de Desenvolvimento de Sistema</td>
+                    <td>FIAP</td>
+                    <td>Cursando disciplinas como programação, lógica e desenvolvimento web.</td>
+                </tr>
+            </tbody>
 
         </table>
     </section>
 
-    <section id="experiencia">
-        <h2>Experiência</h2>
-        <table border="1">
-            <tr>
-                <th>Período</th>
-                <th>Cargo</th>
-                <th>Empresa</th>
-                <th>Descrição</th>
-            </tr>
+    <section class="container" id="experiencia">
+        <h2 class="title">Experiência</h2>
+        <table class="custom_table">
+            <thead>
+                <tr>
+                    <th>Período</th>
+                    <th>Cargo</th>
+                    <th>Empresa</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
 
-            <tr>
-                <td>2013 - 2021</td>
-                <td>Agente Comercial</td>
-                <td>Banco Itaú</td>
-                <td>Atendimento ao cliente e vendas de produtos bancários</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td>2013 - 2021</td>
+                    <td>Agente Comercial</td>
+                    <td>Banco Itaú</td>
+                    <td>Atendimento ao cliente e vendas de produtos bancários</td>
+                </tr>
 
-            <tr>
-                <td>2022 - atual</td>
-                <td>Assistente Comercial Pleno</td>
-                <td>Banco Daycoval</td>
-                <td>Realização de operações financeiras para Pessoas Jurídicas</td>
-            </tr>
-
+                <tr>
+                    <td>2022 - atual</td>
+                    <td>Assistente Comercial Pleno</td>
+                    <td>Banco Daycoval</td>
+                    <td>Realização de operações financeiras para Pessoas Jurídicas</td>
+                </tr>
+            </tbody>
         </table>
     </section>
 
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <h3>Landing Page Pessoal</h3>
-        <p>Aprendendo a desenvolver uma página web focada nos meus atributos profissionais.<br>Inicialmente estou aprendendo HTML e mais para frente vou aprender CSS e JavaScript.</p>
+    <section class="container" id="projetos">
+        <h2 class="title">Projetos</h2>
+
+        <div class="container_cards single">
+            <article class="card tecnology">
+                <h3 class="card_title">Landing Page Pessoal</h3>
+                <p class="description">Aprendendo a desenvolver uma página web focada nos meus atributos
+                    profissionais.<br>Inicialmente
+                    estou
+                    aprendendo HTML e mais para frente vou aprender CSS e JavaScript.</p>
+
+                <div class="container_techs_useds">
+                    <a href="#" class="tech">HTML</a>
+                    <a href="#" class="tech">CSS</a>
+                    <a href="#" class="tech">JavaScript</a>
+                </div>
+            </article>
+        </div>
+
     </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Em breve</p>
-        <h3>E-mail</h3>
-        <p>ana.brum@icloud.com</p>
-        <h3>Redes Sociais</h3>
-        <ul>
-            <li><a href="https://github.com/abbrum">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/ana-paula-brum/">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/abbrum/">Instagram</a></li>
-        </ul>
+    <section class="container" id="contato">
+        <h2 class="title">Contato</h2>
+
+        <div class="container_cards two">
+            <article class="card">
+                <p class="description">Fomulario de contato - Em breve</p>
+            </article>
+            <article class="card">
+                <h3 class="contact_title">E-mail</h3>
+                <p class="description">ana.brum@icloud.com</p>
+
+                <h3 class="contact_title">Redes Sociais</h3>
+                <ul class="social_links">
+                    <li><a href="https://github.com/abbrum">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/ana-paula-brum/">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/abbrum/">Instagram</a></li>
+                </ul>
+            </article>
+        </div>
     </section>
 
-    <footer>
+
+    <footer class="custom_footer">
         <p>&copy; 2026 Ana Paula Cunha Brum. Todos os direitos reservados.</p>
     </footer>
 
