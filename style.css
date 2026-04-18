@@ -216,7 +216,7 @@ p {
 }
 
 .container_techs_useds .tech:hover {
-  background: #2563eb;
+  background: #374151;
   transform: translateY(-1px);
 }
 
@@ -224,6 +224,12 @@ p {
   color: #1d4ed8;
   font-size: 15px;
   font-weight: 600;
+}
+
+.asterisco{
+  color: #f59e0b;
+  margin-left: 3px;
+  font-weight: 1000;
 }
 
 .social_links {
@@ -250,6 +256,53 @@ p {
 }
 
 .social_links a:hover {
+  background: #374151;
+  transform: translateY(-1px);
+}
+
+.formulario {
+  margin-top: 10px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;  
+  margin-bottom: 20px;    
+}
+
+input, textarea {
+  font-family: helvetica, sans-serif;
+  font-size: 14px;
+  border-radius: 16px;
+  border: 2px solid rgba(153, 153, 153, 0.58);
+  padding: 10px;
+}
+
+input, textarea {
+  border: 1px solid #434bc58a;
+}
+
+::placeholder {
+  font-family: helvetica, sans-serif;
+  font-size: 14px;
+  color: #888;
+  opacity: 1;
+}
+
+.botao {
+   display: inline-block;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: none;
+  font-size: 12px;
+  text-decoration: none;
+  background: #1d4ed8;
+  color: #EFF6FF;
+  transition: 0.2s;
+}
+
+.botao:hover {
   background: #374151;
   transform: translateY(-1px);
 }
