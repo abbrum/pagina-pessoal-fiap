@@ -1,0 +1,61 @@
+@import url("variables.css");
+
+.container_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #EFF6FF;
+  background: var(--primary);
+  color: #EFF6FF;
+  padding: 0 20px;
+}
+
+.block_details {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.links li a {
+  text-decoration: none;
+  color: var(--background);
+  font-size: 13px;
+}
+
+/* Tablet e celular (até 768px) */
+@media(max-width: 48rem) {
+    .container_header {
+  padding: 15px 20px;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.links {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0;
+    width: 100%;
+    flex-direction: row;
+  }
+
+.links li a {
+    font-size: 12px;
+  }
+
+  .block_details {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+}

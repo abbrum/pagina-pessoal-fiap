@@ -1,0 +1,46 @@
+@import url("variables.css");
+
+.formulario {
+  margin-top: 10px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;  
+  margin-bottom: 20px;    
+}
+
+input, textarea {
+  font-size: 14px;
+  border-radius: var(--border-radius);
+  border: 2px solid rgba(153, 153, 153, 0.58);
+  padding: 10px;
+}
+
+input, textarea {
+  border: 1px solid #434bc58a;
+}
+
+::placeholder {
+   font-size: 14px;
+  color: #888;
+  opacity: 1;
+}
+
+.botao {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: none;
+  font-size: 12px;
+  text-decoration: none;
+  background: #1d4ed8;
+  color: #EFF6FF;
+  transition: 0.2s;
+}
+
+.botao:hover {
+  background: #374151;
+  transform: translateY(-1px);
+}
