@@ -43,7 +43,7 @@
             <p class="description">Sou estudante do 1º semestre de tecnologia, em busca de aprendizado efetivo para
                 atuação na área.</p>
             <img class="my_img"
-                src="https://media.licdn.com/dms/image/v2/C5103AQGG_7QxhAgUJw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516956199418?e=1776297600&v=beta&t=WP8iATeAuHneUNseL37Dx9SNEk6wkg4gSKlf6MW8H0s"
+                src="https://media.licdn.com/dms/image/v2/C5103AQGG_7QxhAgUJw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516956199418?e=1778112000&v=beta&t=K3zkFptDL4l6O45iI8F3Lw0RlL0lPMvpc9eNSOVob3I"
                 alt="Minha Imagem">
         </div>
 
@@ -166,7 +166,6 @@
                 </div>
             </article>
         </div>
-
     </section>
 
     <section class="container" id="contato">
@@ -174,7 +173,29 @@
 
         <div class="container_cards two">
             <article class="card">
-                <p class="description">Fomulario de contato - Em breve</p>
+                <p class="description">Envie sua mensagem</p>
+                <form id="contato" class="formulario" action="" method="post">
+
+                    <div class="input-wrapper">
+                    <label class="contact_title" for="nome">Nome<span class="asterisco">*</span></label>
+                    <input type="text" name="nome" required placeholder="Digite seu nome completo">
+                    </div>
+                    
+                    <div class="input-wrapper">                          
+                    <label class="contact_title" for="e-mail">E-mail<span class="asterisco">*</span></label>
+                    <input type="e-mail" name="e-mail" required placeholder="seu@email.com">
+                    </div>
+
+                    <div class="input-wrapper">
+                    <label class="contact_title" for="mensagem">Mensagem<span class="asterisco">*</span></label>
+                    <textarea name="mensagem" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+
+                    <div class="input-wrapper">
+                    <button class="botao" type="submit">Enviar Mensagem</button>
+                    </div>
+                </form>
+
             </article>
             <article class="card">
                 <h3 class="contact_title">E-mail</h3>
