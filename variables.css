@@ -1,0 +1,11 @@
+:root{
+    --primary: #1d4ed8;
+    --secondary: #f59e0b;
+    --background: #eff6ff;
+    --text: #0f172a;
+    --accent: #ef4444;
+
+    /* Configuração de desing */
+    --font-family: sans-serif;
+    --border-radius: 16px; 
+}
