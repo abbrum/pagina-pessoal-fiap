@@ -5,11 +5,11 @@
     <title>Ana Paula Brum | Criando experiências na web</title>
     <meta charset="UTF=8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="variables.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="form.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style/variables.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/form.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/global.css">
     <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
@@ -19,6 +19,8 @@
             <img src="https://ui-avatars.com/api/?background=1D4ED8&color=0F172A&name=Ana+Brum" alt="Portfolio">
             <span>Portfolio</span>
         </section>
+
+        <button class="menu-toggle" aria-label="Abrir menu">☰</button>
 
         <nav class="container-links">
             <ul class="links">
@@ -49,7 +51,7 @@
             <p class="description">Sou estudante do 1º semestre de tecnologia, em busca de aprendizado efetivo para
                 atuação na área.</p>
             <img class="my_img"
-                src="https://media.licdn.com/dms/image/v2/C5103AQGG_7QxhAgUJw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516956199418?e=1778112000&v=beta&t=K3zkFptDL4l6O45iI8F3Lw0RlL0lPMvpc9eNSOVob3I"
+                src="https://media.licdn.com/dms/image/v2/C5103AQGG_7QxhAgUJw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516956199138?e=1779926400&v=beta&t=4uszn37AAwHlLOcgJVt0mHQk6aL83Blej6IQhXqnKtg"
                 alt="Minha Imagem">
         </div>
 
@@ -61,12 +63,15 @@
             carreira.</p>
     </section>
 
-    <section class="container" id="habilidades">
-        <h2 class="title">Habilidades</h2>
+    <section class="container accordion-item" id="habilidades">
+        <h2 class="title accordion-header">Habilidades
+            <span class="icon">▼</span>
+        </h2>
 
+        <div class="accordion-content">
         <div class="container_cards">
             <article class="card hard_skill">
-                <h3 class="card_title">Hard Skills</h3>
+                <h3 class="card_title">Hard Skills</h3>        
                 <ul class="skill_list">
                     <li>Lógica de programação em Python</li>
                     <li>Progamação Orientada a Objetos</li>
@@ -90,8 +95,8 @@
                 <h3 class="card_title">Tecnologias</h3>
                 <p class="description">Habilidades em desenvolvimento.</p>
             </article>
+            </div>
         </div>
-
     </section>
 
     <section class="container" id="formacao">
@@ -217,11 +222,13 @@
         </div>
     </section>
 
-
     <footer class="custom_footer">
         <p>&copy; 2026 Ana Paula Cunha Brum. Todos os direitos reservados.</p>
     </footer>
 
+    <button id="backToTop" title="Voltar ao topo">↑</button>
+    <script src="script.js"></script>
+    
 </body>
 
 </html>

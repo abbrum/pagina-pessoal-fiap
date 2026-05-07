@@ -1,0 +1,135 @@
+.container_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #EFF6FF;
+  background: var(--primary);
+  color: #EFF6FF;
+  padding: 0 20px;
+}
+
+.block_details {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.links li a {
+  text-decoration: none;
+  color: var(--background);
+  font-size: 13px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Tablet e celular (até 768px) */
+@media(max-width: 48rem) {
+  .container_header {
+    padding: 15px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .container-links {
+    display: none;
+    width: 100%;
+    background: var(--primary);
+  }
+
+  .container-links.active {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--primary);
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: relative;
+    z-index: 1001;
+  }
+
+  .accordion-item {
+    border: 2px solid #FF8C00;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: transparent;
+  }
+
+  .accordion-item {
+    border-top: 2px solid #FF8C00;
+    border-bottom: 2px solid #FF8C00;
+    background-color: #FFFFFF;
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  .accordion-header {
+    color: #1D4ED8;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    cursor: pointer;
+  }
+
+  .accordion-header::before {
+    content: "";
+    width: 4px;
+    height: 25px;
+    display: inline-block;
+  }
+
+  .accordion-content {
+    display: none;
+    padding: 0 20px 20px 20px;
+  }
+
+  .accordion-item.active .accordion-content {
+    display: block;
+  }
+
+  .accordion-item.active .icon {
+    transform: rotate(180deg);
+    display: inline-block;
+  }
+}

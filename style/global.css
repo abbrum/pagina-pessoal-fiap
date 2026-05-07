@@ -1,5 +1,3 @@
-@import url("variables.css");
-
 body {
     margin: 0;
     padding: 0;
@@ -99,7 +97,7 @@ p {
     flex: 1;
 }
 
-.card { 
+.card {
     padding: 16px;
     background: #fff;
     border-radius: var(--border-radius);
@@ -286,6 +284,45 @@ textarea {
     transform: translateY(-1px);
 }
 
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;    
+    background-color: #f9f9f9; 
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 1000px; 
+    padding: 20px 0;
+}
+
+.accordion-item.active .icon {
+    transform: rotate(180deg);
+    display: inline-block;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;    
+    border: none;    
+    background-color: #1d4ed8;   
+    color: white;    
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18px;    
+}
+
+#backToTop:hover {
+    background-color: #374151;    
+    transform: translateY(-1px);
+}
+
 @media(max-width: 48rem) {
     .hero {
         display: flex;
@@ -335,9 +372,8 @@ textarea {
     .custom_table {
         width: 100%;
         border-collapse: collapse;
-        /* importante */
         font-size: 11px;
-        background: #ffffff;
+        background: #eff6ff;
         border-radius: 8px;
         overflow: none;
         display: block;
@@ -351,16 +387,37 @@ textarea {
         flex-direction: column;
     }
 
-   .container_cards .card {
-    flex: 1 1 100%;
-}
+    .container_cards .card {
+        flex: 1 1 100%;
+    }
 
     .container_cards.single .card {
         flex: 100%;
     }
 
-      .container_cards.two .card {
+    .container_cards.two .card {
         flex: 100%;
     }
-    
+
+    #backToTop {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: #1D4ED8;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: opacity 0.3s;
+    }
+
+    #backToTop:hover {
+        background-color: #1e40af;
+    }
 }
