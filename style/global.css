@@ -284,6 +284,45 @@ textarea {
     transform: translateY(-1px);
 }
 
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;    
+    background-color: #f9f9f9; 
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 1000px; 
+    padding: 20px 0;
+}
+
+.accordion-item.active .icon {
+    transform: rotate(180deg);
+    display: inline-block;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;    
+    border: none;    
+    background-color: #1d4ed8;   
+    color: white;    
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18px;    
+}
+
+#backToTop:hover {
+    background-color: #374151;    
+    transform: translateY(-1px);
+}
+
 @media(max-width: 48rem) {
     .hero {
         display: flex;
@@ -334,7 +373,7 @@ textarea {
         width: 100%;
         border-collapse: collapse;
         font-size: 11px;
-        background: #ffffff;
+        background: #eff6ff;
         border-radius: 8px;
         overflow: none;
         display: block;
@@ -362,19 +401,15 @@ textarea {
 
     #backToTop {
         display: none;
-        /* Começa escondido */
         position: fixed;
-        /* Fica parado na tela */
         bottom: 20px;
         right: 20px;
         width: 50px;
         height: 50px;
         background-color: #1D4ED8;
-        /* O azul do seu projeto[cite: 3] */
         color: white;
         border: none;
         border-radius: 50%;
-        /* Faz o botão ficar redondo */
         font-size: 24px;
         cursor: pointer;
         z-index: 1000;
