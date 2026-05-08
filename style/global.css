@@ -286,12 +286,12 @@ textarea {
 
 .accordion-content {
     max-height: 0;
-    overflow: hidden;    
-    background-color: #f9f9f9; 
+    overflow: hidden;
+    background-color: #eff6ff
 }
 
 .accordion-item.active .accordion-content {
-    max-height: 1000px; 
+    max-height: 1000px;
     padding: 20px 0;
 }
 
@@ -301,25 +301,25 @@ textarea {
 }
 
 #backToTop {
+    display: none;
     position: fixed;
-    bottom: 40px;
-    right: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 0;    
-    border: none;    
-    background-color: #1d4ed8;   
-    color: white;    
-    padding: 0px;
+    bottom: 20px;
+    right: 20px;
     width: 50px;
     height: 50px;
+    background-color: #1D4ED8;
+    color: white;
+    border: none;
     border-radius: 50%;
-    font-size: 18px;    
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s;
 }
 
 #backToTop:hover {
-    background-color: #374151;    
+    background-color: #374151;
     transform: translateY(-1px);
 }
 
@@ -397,27 +397,5 @@ textarea {
 
     .container_cards.two .card {
         flex: 100%;
-    }
-
-    #backToTop {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 50px;
-        height: 50px;
-        background-color: #1D4ED8;
-        color: white;
-        border: none;
-        border-radius: 50%;
-        font-size: 24px;
-        cursor: pointer;
-        z-index: 1000;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: opacity 0.3s;
-    }
-
-    #backToTop:hover {
-        background-color: #1e40af;
-    }
+    }    
 }

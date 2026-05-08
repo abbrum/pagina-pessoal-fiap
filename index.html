@@ -185,25 +185,29 @@
         <div class="container_cards two">
             <article class="card">
                 <p class="description">Envie sua mensagem</p>
-                <form id="contato" class="formulario" action="" method="post">
+                <form id="contato" class="formulario" action="" method="post" novalidate>
 
                     <div class="input-wrapper">
                     <label class="contact_title" for="nome">Nome<span class="asterisco">*</span></label>
-                    <input type="text" name="nome" required placeholder="Digite seu nome completo">
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                    <span class="error" id="nomeError"></span>
                     </div>
                     
                     <div class="input-wrapper">                          
                     <label class="contact_title" for="e-mail">E-mail<span class="asterisco">*</span></label>
-                    <input type="e-mail" name="e-mail" required placeholder="seu@email.com">
+                    <input type="e-mail" id="e-mail" name="e-mail" required placeholder="seu@email.com">
+                    <span class="error" id="emailError"></span>
                     </div>
 
                     <div class="input-wrapper">
                     <label class="contact_title" for="mensagem">Mensagem<span class="asterisco">*</span></label>
-                    <textarea name="mensagem" placeholder="Digite sua mensagem"></textarea>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                    <span class="error" id="mensagemError"></span>
                     </div>
 
                     <div class="input-wrapper">
                     <button class="botao" type="submit">Enviar Mensagem</button>
+                    <p id="form-success" style="display:none; color: green;"></p>
                     </div>
                 </form>
 

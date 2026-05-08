@@ -45,3 +45,11 @@ textarea::placeholder {
   background: #374151;
   transform: translateY(-1px);
 }
+
+.error {
+  color: #e74c3c;
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+  min-height: 5px;
+}
