@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary: #1d4ed8;
     --secondary: #f59e0b;
     --background: #eff6ff;
@@ -7,5 +7,5 @@
 
     /* Configuração de desing */
     --font-family: sans-serif;
-    --border-radius: 16px; 
+    --border-radius: 16px;
 }
