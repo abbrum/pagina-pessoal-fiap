@@ -50,48 +50,49 @@ backToTopBtn.addEventListener('click', () => {
 
 const form = document.getElementById('contato');
 
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', function (event) {
     event.preventDefault();
-    
+
     document.getElementById('nomeError').innerText = "";
     document.getElementById('emailError').innerText = "";
     document.getElementById('mensagemError').innerText = "";
     const msgSucesso = document.getElementById('form-success');
     msgSucesso.style.display = "none";
-    
+
     const nome = document.getElementById('nome').value.trim();
-    const email = document.getElementById('e-mail').value.trim(); 
+    const email = document.getElementById('e-mail').value.trim();
     const mensagem = document.getElementById('mensagem').value.trim();
 
     let temErro = false;
 
-    // Validação do Nome
+    // Validação do nome
     if (nome.length < 3) {
         document.getElementById('nomeError').innerText = "O nome deve ter pelo menos 3 caracteres.";
         temErro = true;
     }
 
-    // Validação do E-mail
+    // Validação do e-mail
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
         document.getElementById('emailError').innerText = "Insira um e-mail válido.";
         temErro = true;
     }
 
-    // Validação da Mensagem
+    // Validação da mensagem
     if (mensagem.length < 10) {
         document.getElementById('mensagemError').innerText = "A mensagem deve ter pelo menos 10 caracteres.";
-        temErro = true;    }
+        temErro = true;
+    }
 
-    
-      if (!temErro) {
+
+    if (!temErro) {
         console.log("Dados do usuário:", { nome, email, mensagem });
         const msgSucesso = document.getElementById('form-success');
         msgSucesso.innerText = "Mensagem enviada com sucesso!";
-        msgSucesso.style.display = "block";        
-        
-        event.target.reset(); 
-        
+        msgSucesso.style.display = "block";
+
+        event.target.reset();
+
         setTimeout(() => {
             msgSucesso.style.display = "none";
         }, 3000);

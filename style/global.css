@@ -19,20 +19,20 @@ body {
 
 .container .title {
     padding: 2px 5px;
-    color: #1d4ed8;
+    color: var(--primary);
     font-size: 20px;
     margin: 0;
-    border-left: 4px solid #EE4444;
+    border-left: 4px solid var(--accent);
 }
 
 .container .description {
-    color: #0F172A;
+    color: var(--text);
     font-size: 13px;
 }
 
 .professional_objective {
     border-radius: var(--border-radius);
-    background: #e6f2ff;
+    background: var(--background);
 }
 
 .block_details img {
@@ -46,7 +46,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 50px 0;
-    background: #1d4ed8;
+    background: var(--primary);
     gap: 15px;
 }
 
@@ -54,7 +54,7 @@ body {
 p {
     margin: 0;
     padding: 0;
-    color: #EFF6FF;
+    color: var(--background);
 }
 
 .hero h1 {
@@ -69,7 +69,7 @@ p {
     padding: 5px 15px;
     border-radius: var(--border-radius);
     border: none;
-    color: #1d4ed8;
+    color: var(--primary);
     font-weight: 600;
 }
 
@@ -99,11 +99,11 @@ p {
 
 .card {
     padding: 16px;
-    background: #fff;
+    background: var(--background);
     border-radius: var(--border-radius);
 }
 
-.container_cards.single .card {
+.container_cards .single .card {
     flex: 0 0 33.33%;
 }
 
@@ -116,19 +116,19 @@ p {
 }
 
 .hard_skill {
-    border-top: 3px solid #1d4ed8;
+    border-top: 3px solid var(--primary);
 }
 
 .soft_skill {
-    border-top: 3px solid #EE4444;
+    border-top: 3px solid var(--accent);
 }
 
 .tecnology {
-    border-top: 3px solid #F59E0B;
+    border-top: 3px solid var(--secondary);
 }
 
 .card_title {
-    color: #EF4444;
+    color: var(--accent);
     font-size: 15px;
 }
 
@@ -138,16 +138,15 @@ p {
 
 .custom_table {
     width: 100%;
-    border-collapse: collapse;
-    /* importante */
-    font-size: 13px;
-    background: #ffffff;
-    border-radius: 8px;
+    border-collapse: collapse;  
+    font-size: 13px;     
+    background: var(--background);
+    border-radius: var(--border-radius);
     overflow: hidden;
 }
 
 .custom_table thead {
-    background: #1d4ed8;
+    background: var(--primary);
     color: white;
 }
 
@@ -159,7 +158,7 @@ p {
 
 .custom_table td {
     padding: 12px;
-    color: #1f2937;
+    color: var(--text);
 }
 
 .custom_table tbody tr:nth-child(even) {
@@ -167,7 +166,7 @@ p {
 }
 
 .custom_table tbody tr {
-    border-bottom: 1px solid #EFF6FF;
+    border-bottom: 1px solid var(--background);
 }
 
 .custom_table tbody tr:last-child {
@@ -182,10 +181,10 @@ p {
 }
 
 .container_techs_useds .tech {
-    background: #1d4ed8;
-    color: #EFF6FF;
+    background: var(--primary);
+    color: var(--background);
     padding: 5px 10px;
-    border-radius: 999px;
+    border-radius: var(--border-radius);
     font-size: 12px;
     text-decoration: none;
     display: inline-block;
@@ -193,18 +192,18 @@ p {
 }
 
 .container_techs_useds .tech:hover {
-    background: #374151;
+    background: #81a9e9;
     transform: translateY(-1px);
 }
 
 .contact_title {
-    color: #1d4ed8;
+    color: var(--primary);
     font-size: 15px;
     font-weight: 600;
 }
 
 .asterisco {
-    color: #f59e0b;
+    color: var(secondary);
     margin-left: 3px;
     font-weight: 1000;
 }
@@ -227,67 +226,24 @@ p {
     border-radius: 999px;
     font-size: 12px;
     text-decoration: none;
-    background: #1d4ed8;
-    color: #EFF6FF;
+    background: var(--primary);
+    color: var(--background);
     transition: 0.2s;
 }
 
 .social_links a:hover {
-    background: #374151;
+    background: #81a9e9;
     transform: translateY(-1px);
 }
 
-.formulario {
-    margin-top: 10px;
-}
-
-.input-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-bottom: 20px;
-}
-
-input,
-textarea {
-    font-size: 14px;
-    border-radius: var(--border-radius);
-    border: 2px solid rgba(153, 153, 153, 0.58);
-    padding: 10px;
-}
-
-input,
-textarea {
-    border: 1px solid #434bc58a;
-}
-
-::placeholder {
-    font-size: 14px;
-    color: #888;
-    opacity: 1;
-}
-
-.botao {
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 999px;
-    border: none;
-    font-size: 12px;
-    text-decoration: none;
-    background: #1d4ed8;
-    color: #EFF6FF;
-    transition: 0.2s;
-}
-
-.botao:hover {
-    background: #374151;
-    transform: translateY(-1px);
+input, textarea {    
+    font-family: inherit;
 }
 
 .accordion-content {
     max-height: 0;
     overflow: hidden;
-    background-color: #eff6ff
+    background-color: var(--background)
 }
 
 .accordion-item.active .accordion-content {
@@ -307,7 +263,7 @@ textarea {
     right: 20px;
     width: 50px;
     height: 50px;
-    background-color: #1D4ED8;
+    background-color: var(--primary);
     color: white;
     border: none;
     border-radius: 50%;
@@ -319,7 +275,7 @@ textarea {
 }
 
 #backToTop:hover {
-    background-color: #374151;
+    background-color: #81a9e9;
     transform: translateY(-1px);
 }
 
@@ -330,7 +286,7 @@ textarea {
         flex-direction: column;
         align-items: center;
         padding: 50px 0;
-        background: #1d4ed8;
+        background: var(--primary);
         gap: 15px;
     }
 
@@ -338,7 +294,7 @@ textarea {
     p {
         margin: 0;
         padding: 0;
-        color: #EFF6FF;
+        color: var(--background);
         justify-content: right;
     }
 
@@ -354,7 +310,7 @@ textarea {
         padding: 5px 15px;
         border-radius: var(--border-radius);
         border: none;
-        color: #1d4ed8;
+        color: var(--primary);
         font-weight: 600;
     }
 
@@ -373,7 +329,7 @@ textarea {
         width: 100%;
         border-collapse: collapse;
         font-size: 11px;
-        background: #eff6ff;
+        background: var(--background);
         border-radius: 8px;
         overflow: none;
         display: block;

@@ -5,49 +5,44 @@
 .input-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 5px;  
-  margin-bottom: 20px;    
+  gap: 5px;
+  margin-bottom: 20px;
 }
 
-input, textarea {
-  font-family: inherit;
+input,textarea {
   font-size: 14px;
   border-radius: var(--border-radius);
-  border: 2px solid rgba(153, 153, 153, 0.58);
+  border: 1px solid #434bc58a;
   padding: 10px;
 }
 
-input, textarea {
-  border: 1px solid #434bc58a;
-}
-
-textarea::placeholder {
+::placeholder {
   font-family: inherit;
   font-size: 14px;
   color: #888;
   opacity: 1;
-  font: optional;
 }
 
 .botao {
   display: inline-block;
   padding: 5px 10px;
-  border-radius: 999px;
+  border-radius: var(--border-radius);
   border: none;
   font-size: 12px;
   text-decoration: none;
-  background: #1d4ed8;
-  color: #EFF6FF;
+  background: var(--primary);
+  color: var(--background);
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .botao:hover {
-  background: #374151;
+  background: #81a9e9;
   transform: translateY(-1px);
 }
 
 .error {
-  color: #e74c3c;
+  color: var(--accent);
   font-size: 12px;
   display: block;
   margin-top: 5px;
